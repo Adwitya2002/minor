@@ -896,8 +896,27 @@ footer .copyright {
 /*Blog Page*/
 
 #page-header.blog-header {
-  background-image: url("img/banner/b19.jpg")
+  display: flex;
+  align-items: center;
+  background-image: url("img/banner/b19.png");
+  background-size: 50% auto;
+  background-position: left; /* Shift the image to the left */
+  background-repeat: no-repeat;
+  height: 300px; /* Adjust the height based on your design */
 }
+
+#page-header.blog-header h2,
+#page-header.blog-header p {
+  flex: 1;
+  margin-top: 5%; /* Adjust the padding based on your design */
+  margin-left: 50%;
+  text-align: right;
+  color: black
+}
+
+
+
+
 
 
 #blog {
